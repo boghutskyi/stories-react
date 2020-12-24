@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rosybrown;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 405px;
+  border-radius: 10px;
+}
+
+.container .story-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.container .story {
+  position: relative;
+}
+
+.container .story .header {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .story .header .timeline {
+  width: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.container .story .header .timeline .dash {
+  height: 4px;
+  width: 100%;
+  background: #F2F2F2;
+  border-radius: 25px;
+  margin-left: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .story .header .timeline .dash .indicator {
+  position: absolute;
+  height: 4px;
+  background: #4F4F4F;
+  border-radius: 25px;
+}
+
+.container .story .header .timeline .dash .active {
+  -webkit-animation: forward 5s linear;
+          animation: forward 5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.container .story .header .timeline .dash .active-done {
+  width: 100%;
+}
+
+.container .story .header .timeline .dash:first-child {
+  margin-left: 0;
+}
+
+.container .story .header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container .story .header .user .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .story .header .user .user-info .user-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.container .story .header .user .user-info .user-picture img {
+  height: 100%;
+  width: auto;
+}
+
+.container .story .header .user .pause {
+  z-index: 100;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.container .story .header .user .pause .material-icons-round {
+  color: #fff;
+}
+
+.container .story .header .user .name {
+  margin-left: 10px;
+  color: #F2F2F2;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.container .story .nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.container .story .nav .forward {
+  position: absolute;
+  right: 0;
+  margin-top: 10vh;
+  width: 70%;
+  height: 90vh;
+  cursor: pointer;
+}
+
+.container .story .nav .back {
+  position: absolute;
+  left: 0;
+  margin-top: 10vh;
+  height: 90vh;
+  width: 30%;
+  cursor: pointer;
+}
+
+.container .story .story-img {
+  width: 405px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .story .story-img img {
+  height: 100%;
+  width: auto;
+}
+
+@-webkit-keyframes forward {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes forward {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
